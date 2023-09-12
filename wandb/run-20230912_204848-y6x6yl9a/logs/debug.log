@@ -1,0 +1,127 @@
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Configure stats pid to 2858
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /workspace/1L-Sparse-Autoencoder/wandb/settings
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'autoencoder.py', 'program': '/workspace/1L-Sparse-Autoencoder/autoencoder.py'}
+2023-09-12 20:48:48,505 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-09-12 20:48:48,506 INFO    MainThread:2858 [wandb_init.py:_log_setup():524] Logging user logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204848-y6x6yl9a/logs/debug.log
+2023-09-12 20:48:48,506 INFO    MainThread:2858 [wandb_init.py:_log_setup():525] Logging internal logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204848-y6x6yl9a/logs/debug-internal.log
+2023-09-12 20:48:48,506 INFO    MainThread:2858 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f3ffc173f70>
+2023-09-12 20:48:48,507 INFO    MainThread:2858 [wandb_init.py:init():564] calling init triggers
+2023-09-12 20:48:48,507 INFO    MainThread:2858 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-09-12 20:48:48,507 INFO    MainThread:2858 [wandb_init.py:init():614] starting backend
+2023-09-12 20:48:48,507 INFO    MainThread:2858 [wandb_init.py:init():618] setting up manager
+2023-09-12 20:48:48,512 INFO    MainThread:2858 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-12 20:48:48,515 INFO    MainThread:2858 [wandb_init.py:init():624] backend started and connected
+2023-09-12 20:48:48,536 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-09-12 20:48:48,536 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-09-12 20:48:48,537 INFO    MainThread:2858 [wandb_init.py:init():715] updated telemetry
+2023-09-12 20:48:48,542 INFO    MainThread:2858 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-12 20:48:48,923 ERROR   MainThread:2858 [wandb_init.py:init():774] encountered error: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2023-09-12 20:48:49,077 ERROR   MainThread:2858 [wandb_init.py:init():1183] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1165, in init
+    run = wi.init()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 780, in init
+    raise error
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Configure stats pid to 2858
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /workspace/1L-Sparse-Autoencoder/wandb/settings
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'autoencoder.py', 'program': '/workspace/1L-Sparse-Autoencoder/autoencoder.py'}
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_init.py:_log_setup():524] Logging user logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204916-7elljh3q/logs/debug.log
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_init.py:_log_setup():525] Logging internal logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204916-7elljh3q/logs/debug-internal.log
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_init.py:init():564] calling init triggers
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_init.py:init():614] starting backend
+2023-09-12 20:49:16,810 INFO    MainThread:2858 [wandb_init.py:init():618] setting up manager
+2023-09-12 20:49:16,814 INFO    MainThread:2858 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-12 20:49:16,815 INFO    MainThread:2858 [wandb_init.py:init():624] backend started and connected
+2023-09-12 20:49:16,829 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-09-12 20:49:16,829 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-09-12 20:49:16,829 INFO    MainThread:2858 [wandb_init.py:init():715] updated telemetry
+2023-09-12 20:49:16,836 INFO    MainThread:2858 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-12 20:49:33,132 WARNING MainThread:2858 [wandb_init.py:init():1187] interrupted
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1165, in init
+    run = wi.init()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/usr/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Configure stats pid to 2858
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /workspace/1L-Sparse-Autoencoder/wandb/settings
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-12 20:49:37,568 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'autoencoder.py', 'program': '/workspace/1L-Sparse-Autoencoder/autoencoder.py'}
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_init.py:_log_setup():524] Logging user logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204937-8bpiiifm/logs/debug.log
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_init.py:_log_setup():525] Logging internal logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204937-8bpiiifm/logs/debug-internal.log
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_init.py:init():564] calling init triggers
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_init.py:init():614] starting backend
+2023-09-12 20:49:37,569 INFO    MainThread:2858 [wandb_init.py:init():618] setting up manager
+2023-09-12 20:49:37,574 INFO    MainThread:2858 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-12 20:49:37,575 INFO    MainThread:2858 [wandb_init.py:init():624] backend started and connected
+2023-09-12 20:49:37,589 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-09-12 20:49:37,589 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-09-12 20:49:37,589 INFO    MainThread:2858 [wandb_init.py:init():715] updated telemetry
+2023-09-12 20:49:37,596 INFO    MainThread:2858 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-12 20:49:43,258 WARNING MainThread:2858 [wandb_init.py:init():1187] interrupted
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 1165, in init
+    run = wi.init()
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/wandb_init.py", line 751, in init
+    result = run_init_handle.wait(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/usr/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/usr/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2023-09-12 20:49:58,342 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Configure stats pid to 2858
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from /workspace/1L-Sparse-Autoencoder/wandb/settings
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'autoencoder.py', 'program': '/workspace/1L-Sparse-Autoencoder/autoencoder.py'}
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_init.py:_log_setup():524] Logging user logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204958-dfz9bnat/logs/debug.log
+2023-09-12 20:49:58,343 INFO    MainThread:2858 [wandb_init.py:_log_setup():525] Logging internal logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204958-dfz9bnat/logs/debug-internal.log
+2023-09-12 20:49:58,344 INFO    MainThread:2858 [wandb_init.py:init():564] calling init triggers
+2023-09-12 20:49:58,344 INFO    MainThread:2858 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-09-12 20:49:58,344 INFO    MainThread:2858 [wandb_init.py:init():614] starting backend
+2023-09-12 20:49:58,344 INFO    MainThread:2858 [wandb_init.py:init():618] setting up manager
+2023-09-12 20:49:58,349 INFO    MainThread:2858 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-12 20:49:58,350 INFO    MainThread:2858 [wandb_init.py:init():624] backend started and connected
+2023-09-12 20:49:58,366 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-09-12 20:49:58,366 INFO    MainThread:2858 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-09-12 20:49:58,366 INFO    MainThread:2858 [wandb_init.py:init():715] updated telemetry
+2023-09-12 20:49:58,372 INFO    MainThread:2858 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout

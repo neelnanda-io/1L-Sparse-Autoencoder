@@ -1,0 +1,79 @@
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Configure stats pid to 6825
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Loading settings from /workspace/1L-Sparse-Autoencoder/wandb/settings
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'autoencoder.py', 'program': '/workspace/1L-Sparse-Autoencoder/autoencoder.py'}
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_init.py:_log_setup():524] Logging user logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_214635-1z49pimd/logs/debug.log
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_init.py:_log_setup():525] Logging internal logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_214635-1z49pimd/logs/debug-internal.log
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_init.py:_jupyter_setup():470] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f5ddc120f70>
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_init.py:init():564] calling init triggers
+2023-09-12 21:46:35,354 INFO    MainThread:6825 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-09-12 21:46:35,355 INFO    MainThread:6825 [wandb_init.py:init():614] starting backend
+2023-09-12 21:46:35,355 INFO    MainThread:6825 [wandb_init.py:init():618] setting up manager
+2023-09-12 21:46:35,358 INFO    MainThread:6825 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-09-12 21:46:35,360 INFO    MainThread:6825 [wandb_init.py:init():624] backend started and connected
+2023-09-12 21:46:35,372 INFO    MainThread:6825 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-09-12 21:46:35,372 INFO    MainThread:6825 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-09-12 21:46:35,372 INFO    MainThread:6825 [wandb_init.py:init():715] updated telemetry
+2023-09-12 21:46:35,378 INFO    MainThread:6825 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2023-09-12 21:46:35,903 INFO    MainThread:6825 [wandb_run.py:_on_init():2220] communicating current version
+2023-09-12 21:46:36,080 INFO    MainThread:6825 [wandb_run.py:_on_init():2229] got version response 
+2023-09-12 21:46:36,081 INFO    MainThread:6825 [wandb_init.py:init():799] starting run threads in backend
+2023-09-12 21:46:36,228 INFO    MainThread:6825 [wandb_run.py:_console_start():2199] atexit reg
+2023-09-12 21:46:36,229 INFO    MainThread:6825 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-09-12 21:46:36,229 INFO    MainThread:6825 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-09-12 21:46:36,229 INFO    MainThread:6825 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-09-12 21:46:36,230 INFO    MainThread:6825 [wandb_init.py:init():840] run started, returning control to user process
+2023-09-12 21:46:44,019 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:46:44,019 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:46:44,681 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:46:44,686 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:46:44,686 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:46:53,908 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:46:53,913 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:46:53,913 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:46:56,572 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:46:56,577 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:46:56,577 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:46:58,126 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:46:58,131 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:46:58,131 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:46:58,248 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:46:58,252 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:46:58,252 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:47:04,057 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:47:04,061 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:47:04,061 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:47:04,492 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:47:04,496 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:47:04,496 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:47:07,432 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:47:07,436 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:47:07,436 INFO    MainThread:6825 [wandb_init.py:_pause_backend():435] pausing backend
+2023-09-12 21:47:18,186 INFO    MainThread:6825 [wandb_init.py:_resume_backend():440] resuming backend
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Current SDK version is 0.15.10
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Configure stats pid to 6825
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Loading settings from /root/.config/wandb/settings
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Loading settings from /workspace/1L-Sparse-Autoencoder/wandb/settings
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'autoencoder.py', 'program': '/workspace/1L-Sparse-Autoencoder/autoencoder.py'}
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_init.py:_log_setup():524] Logging user logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_214718-wdxojfw8/logs/debug.log
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_init.py:_log_setup():525] Logging internal logs to /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_214718-wdxojfw8/logs/debug-internal.log
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_init.py:init():564] calling init triggers
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {}
+2023-09-12 21:47:18,202 INFO    MainThread:6825 [wandb_init.py:init():589] re-initializing run, found existing run on stack: 1z49pimd
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [wandb_run.py:_finish():1934] finishing run neelnanda-io/autoencoder/1z49pimd
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [jupyter.py:save_history():445] not saving jupyter history
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [wandb_init.py:_jupyter_teardown():452] cleaning up jupyter logic
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [wandb_run.py:_atexit_cleanup():2168] got exitcode: 0
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [wandb_run.py:_restore():2151] restore
+2023-09-12 21:47:18,204 INFO    MainThread:6825 [wandb_run.py:_restore():2157] restore done
+2023-09-12 21:47:22,276 INFO    MainThread:6825 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-12 21:47:22,277 INFO    MainThread:6825 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-12 21:47:22,288 INFO    MainThread:6825 [wandb_run.py:_footer_sync_info():3516] logging synced files

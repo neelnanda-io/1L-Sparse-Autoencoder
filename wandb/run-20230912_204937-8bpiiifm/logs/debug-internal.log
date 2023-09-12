@@ -1,0 +1,86 @@
+2023-09-12 20:49:37,576 INFO    StreamThr :3905 [internal.py:wandb_internal():86] W&B internal server running at pid: 3905, started at: 2023-09-12 20:49:37.575454
+2023-09-12 20:49:37,577 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status
+2023-09-12 20:49:37,590 INFO    WriterThread:3905 [datastore.py:open_for_write():85] open: /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204937-8bpiiifm/run-8bpiiifm.wandb
+2023-09-12 20:49:37,590 DEBUG   SenderThread:3905 [sender.py:send():379] send: header
+2023-09-12 20:49:37,597 DEBUG   SenderThread:3905 [sender.py:send():379] send: run
+2023-09-12 20:49:37,982 ERROR   SenderThread:3905 [internal_api.py:execute():361] 403 response executing GraphQL.
+2023-09-12 20:49:37,982 ERROR   SenderThread:3905 [internal_api.py:execute():362] {"errors":[{"message":"permission denied","path":["upsertBucket"],"extensions":{"code":"PERMISSION_ERROR"}}],"data":{"upsertBucket":null}}
+2023-09-12 20:49:37,982 ERROR   SenderThread:3905 [sender.py:send_run():976] It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/internal/internal_api.py", line 358, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/usr/local/lib/python3.10/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "/usr/local/lib/python3.10/dist-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/internal/sender.py", line 974, in send_run
+    self._init_run(run, config_value_dict)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/internal/sender.py", line 1012, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/usr/local/lib/python3.10/dist-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/internal/internal_api.py", line 1999, in upsert_run
+    response = self.gql(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/internal/internal_api.py", line 330, in gql
+    ret = self._retry_gql(
+  File "/usr/local/lib/python3.10/dist-packages/wandb/sdk/lib/retry.py", line 147, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/util.py", line 964, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/usr/local/lib/python3.10/dist-packages/wandb/util.py", line 906, in no_retry_auth
+    raise CommError(
+wandb.errors.CommError: It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 403: Forbidden)
+2023-09-12 20:49:38,934 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:42,229 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:42,604 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:49:42,984 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:43,935 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:47,230 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:47,985 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:48,936 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:52,231 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:52,986 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:53,937 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:57,232 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:57,987 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:49:58,351 INFO    StreamThr :3905 [internal.py:wandb_internal():86] W&B internal server running at pid: 3905, started at: 2023-09-12 20:49:58.350958
+2023-09-12 20:49:58,352 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status
+2023-09-12 20:49:58,367 INFO    WriterThread:3905 [datastore.py:open_for_write():85] open: /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204958-dfz9bnat/run-dfz9bnat.wandb
+2023-09-12 20:49:58,368 DEBUG   SenderThread:3905 [sender.py:send():379] send: header
+2023-09-12 20:49:58,373 DEBUG   SenderThread:3905 [sender.py:send():379] send: run
+2023-09-12 20:49:58,891 INFO    SenderThread:3905 [dir_watcher.py:__init__():211] watching files in: /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204958-dfz9bnat/files
+2023-09-12 20:49:58,891 INFO    SenderThread:3905 [sender.py:_start_run_threads():1121] run started: dfz9bnat with start time 1694551798.350911
+2023-09-12 20:49:58,938 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:02,233 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:02,988 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:03,380 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:03,892 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:03,940 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:07,234 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:07,989 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:08,385 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:08,893 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:08,941 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:12,235 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:12,990 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:13,389 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:13,894 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:13,942 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:17,236 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:17,991 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:18,395 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:18,895 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:18,943 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report

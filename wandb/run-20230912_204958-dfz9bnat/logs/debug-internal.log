@@ -1,0 +1,28 @@
+2023-09-12 20:49:58,351 INFO    StreamThr :3905 [internal.py:wandb_internal():86] W&B internal server running at pid: 3905, started at: 2023-09-12 20:49:58.350958
+2023-09-12 20:49:58,352 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status
+2023-09-12 20:49:58,367 INFO    WriterThread:3905 [datastore.py:open_for_write():85] open: /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204958-dfz9bnat/run-dfz9bnat.wandb
+2023-09-12 20:49:58,368 DEBUG   SenderThread:3905 [sender.py:send():379] send: header
+2023-09-12 20:49:58,373 DEBUG   SenderThread:3905 [sender.py:send():379] send: run
+2023-09-12 20:49:58,891 INFO    SenderThread:3905 [dir_watcher.py:__init__():211] watching files in: /workspace/1L-Sparse-Autoencoder/wandb/run-20230912_204958-dfz9bnat/files
+2023-09-12 20:49:58,891 INFO    SenderThread:3905 [sender.py:_start_run_threads():1121] run started: dfz9bnat with start time 1694551798.350911
+2023-09-12 20:49:58,938 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:02,233 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:02,988 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:03,380 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:03,892 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:03,940 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:07,234 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:07,989 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:08,385 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:08,893 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:08,941 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:12,235 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:12,990 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:13,389 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:13,894 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:13,942 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:17,236 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:17,991 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:18,395 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 20:50:18,895 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 20:50:18,943 DEBUG   HandlerThread:3905 [handler.py:handle_request():144] handle_request: status_report
