@@ -19,30 +19,22 @@ try:
     act_freq_scores_list = []
     for i in tqdm.trange(num_batches):
         i = i % all_tokens.shape[0]
-        # tokens = all_tokens[i:i+cfg["model_batch_size"]]
-        # acts = get_mlp_acts(tokens, batch_size=cfg["batch_size"])[0].detach()
         acts = buffer.next()
         loss, x_reconstruct, mid_acts, l2_loss, l1_loss = encoder(acts)
         loss.backward()
         encoder.make_decoder_weights_and_grad_unit_norm()
-        if cfg["remove_rare_dir"]:
-            with torch.no_grad():
-                encoder.W_enc.grad -= (rare_freq_dir @ encoder.W_enc.grad)[None, :] * rare_freq_dir[:, None]
         encoder_optim.step()
         encoder_optim.zero_grad()
-        if cfg["remove_rare_dir"]:
-            with torch.no_grad():
-                encoder.W_enc -= (rare_freq_dir @ encoder.W_enc)[None, :] * rare_freq_dir[:, None]
         loss_dict = {"loss": loss.item(), "l2_loss": l2_loss.item(), "l1_loss": l1_loss.item()}
         del loss, x_reconstruct, mid_acts, l2_loss, l1_loss, acts
         if (i) % 100 == 0:
             wandb.log(loss_dict)
             print(loss_dict)
         if (i) % 1000 == 0:
-            x = (get_recons_loss())
+            x = (get_recons_loss(local_encoder=encoder))
             print("Reconstruction:", x)
             recons_scores.append(x[0])
-            freqs = get_freqs(5)
+            freqs = get_freqs(5, local_encoder=encoder)
             act_freq_scores_list.append(freqs)
             # histogram(freqs.log10(), marginal="box", histnorm="percent", title="Frequencies")
             wandb.log({
@@ -54,9 +46,10 @@ try:
         if (i+1) % 30000 == 0:
             encoder.save()
             wandb.log({"reset_neurons": 0.0})
-            freqs = get_freqs(50)
+            freqs = get_freqs(50, local_encoder=encoder)
             to_be_reset = (freqs<10**(-5.5))
             print("Resetting neurons!", to_be_reset.sum())
             re_init(to_be_reset, encoder)
 finally:
     encoder.save()
+# %%
